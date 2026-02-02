@@ -13,15 +13,21 @@ export type CurrencyConfig = {
     config = { ...config, ...overrides };
   };
   
-  export const getCurrencyConfig = () => {
-    const locale =
-      typeof Intl !== 'undefined'
-        ? Intl.DateTimeFormat().resolvedOptions().locale
-        : config.locale;
-  
-    return {
-      locale,
-      currency: config.currency,
-    };
+// src/config.ts
+export const getCurrencyConfig = () => {
+  if (config.locale) {
+    return config;
+  }
+
+  const locale =
+    typeof Intl !== 'undefined'
+      ? Intl.DateTimeFormat().resolvedOptions().locale
+      : 'en-US';
+
+  return {
+    locale,
+    currency: config.currency,
   };
+};
+
   

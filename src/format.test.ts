@@ -30,4 +30,9 @@ describe('currency utils', () => {
   it('formats percent', () => {
     expect(formatPercent(0.25)).toBe('25%');
   });
+  it('respects project currency config', () => {
+    setCurrencyConfig({ currency: 'NGN', locale: 'en-NG' });
+    expect(formatCurrency(1000)).toContain('₦');
+  });
+  
 });

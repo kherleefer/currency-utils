@@ -1,14 +1,35 @@
 {
-  "name": "@glister/currency-utils",
+  "name": "@your-scope/currency-utils",
   "version": "1.0.0",
-  "description": "Lightweight currency and number formatting utilities",
+  "description": "Lightweight, tree-shakable currency and number formatting utilities",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "vitest",
+    "prepublishOnly": "pnpm build && pnpm test"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "currency",
+    "intl",
+    "format",
+    "money",
+    "typescript",
+    "tree-shaking"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kherleefer/currency-utils/issues"
+  },
+  "homepage": "https://github.com/kherleefer/currency-utils#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kherleefer/currency-utils.git"
   },
   "devDependencies": {
     "vitest": "^4.0.18"
