@@ -1,0 +1,16 @@
+{
+  "name": "@glister/currency-utils",
+  "version": "1.0.0",
+  "description": "Lightweight currency and number formatting utilities",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.18"
+  }
+}
