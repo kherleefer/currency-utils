@@ -56,8 +56,29 @@ setCurrencyConfig({
   locale: 'en-NG',
 });
 ```
+---
+
+### On the Next.js codebase
+
+Call `setCurrencyConfig` inside a client component or provider:
+
+```ts
+'use client';
+
+import { useEffect } from 'react';
+import { setCurrencyConfig } from '@glister/currency-utils';
+
+useEffect(() => {
+  setCurrencyConfig({ currency: 'NGN', locale: 'en-NG' });
+}, []);
+```
+
+---
 
 After this, **all formatters automatically respect the config**.
+* Note!: NGN & en-NG is just an example which is Nigeria Currency and English.
+
+---
 
 ```ts
 formatCurrency(1000); // ₦1,000.00
