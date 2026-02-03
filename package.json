@@ -5,7 +5,9 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "vitest",
@@ -32,6 +34,7 @@
     "url": "git+https://github.com/kherleefer/currency-utils.git"
   },
   "devDependencies": {
+    "typescript": "^5.9.3",
     "vitest": "^4.0.18"
   }
 }
