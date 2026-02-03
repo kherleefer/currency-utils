@@ -1,5 +1,5 @@
 
-# @your-scope/currency-utils
+# @glister/currency-utils
 
 Lightweight, zero-dependency currency and number formatting utilities built on
 the native `Intl` API.
@@ -15,11 +15,11 @@ the native `Intl` API.
 ## Installation
 
 ```bash
-npm install @your-scope/currency-utils
+npm install @glister/currency-utils
 # or
-pnpm add @your-scope/currency-utils
+pnpm add @glister/currency-utils
 # or
-yarn add @your-scope/currency-utils
+yarn add @glister/currency-utils
 ````
 
 ---
@@ -33,7 +33,7 @@ import {
   formatCompactCurrency,
   formatNumber,
   formatPercent,
-} from '@your-scope/currency-utils';
+} from '@glister/currency-utils';
 
 formatCurrency(1500);          // $1,500.00
 formatCompact(1500000);        // 1.5M
@@ -49,7 +49,7 @@ formatPercent(0.075);          // 7.5%
 You can configure the default currency and locale **once per project**.
 
 ```ts
-import { setCurrencyConfig } from '@your-scope/currency-utils';
+import { setCurrencyConfig } from '@glister/currency-utils';
 
 setCurrencyConfig({
   currency: 'NGN',

@@ -1,5 +1,5 @@
 {
-  "name": "@your-scope/currency-utils",
+  "name": "@glister/currency-utils",
   "version": "1.0.0",
   "description": "Lightweight, tree-shakable currency and number formatting utilities",
   "type": "module",
