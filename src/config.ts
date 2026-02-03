@@ -1,4 +1,3 @@
-// src/config.ts
 export type CurrencyConfig = {
     locale?: string;
     currency?: string;
@@ -13,7 +12,6 @@ export type CurrencyConfig = {
     config = { ...config, ...overrides };
   };
   
-// src/config.ts
 export const getCurrencyConfig = () => {
   if (config.locale) {
     return config;

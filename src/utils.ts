@@ -1,4 +1,3 @@
-// src/utils.ts
 export type Amount = number | string;
 
 export const toNumber = (amount: Amount): number | null => {

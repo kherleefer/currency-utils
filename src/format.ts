@@ -1,4 +1,3 @@
-// src/format.ts
 import { toNumber, Amount } from './utils';
 import { getCurrencyConfig } from './config';
 
@@ -42,10 +41,6 @@ export const formatCompact = (amount: Amount) => {
   });
 };
 
-/**
- * Explicit non-compact number formatter
- * (this is what you were implicitly using before)
- */
 export const formatNumber = (amount: Amount) => {
   const value = toNumber(amount);
   const { locale } = getCurrencyConfig();

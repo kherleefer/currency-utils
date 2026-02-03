@@ -1,4 +1,3 @@
-// src/format.test.ts
 import { describe, it, expect } from 'vitest';
 import {
   formatCurrency,
