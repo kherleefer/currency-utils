@@ -1,6 +1,6 @@
 {
   "name": "@glister/currency-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lightweight, tree-shakable currency and number formatting utilities",
   "type": "module",
   "main": "dist/index.js",
