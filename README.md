@@ -46,7 +46,7 @@ formatPercent(0.075);          // 7.5%
 
 ## Project-level Configuration
 
-You can configure the default currency and locale **once per project**.
+You can configure the default currency and locale **once per project in your main entrypoint: app.ts main.tsx main.jsx main.js. etc**.
 
 ```ts
 import { setCurrencyConfig } from '@glister/currency-utils';
